@@ -10,5 +10,3 @@ btsync --dump-sample-config > btsync.conf
 "listening_port" : 55555
 "storage_path" : "/btsync/.sync"
 "listen" : "0.0.0.0:8888"
-docker build -t="btsync" .
-docker run -d -p 8888:8888 -p 55555:55555 -v /srv/btsync/:/btsync/ btsync
